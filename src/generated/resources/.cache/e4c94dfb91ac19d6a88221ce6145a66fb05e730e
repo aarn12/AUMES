@@ -1,0 +1,6 @@
+// 1.20.1	2024-03-08T09:40:54.0717732	Tags for minecraft:block mod id iloveclairo
+903268f0ee87a361681afdc5b8ec857eef89f948 data/forge/tags/blocks/needs_netherite_tool.json
+73119c750e3dbae884c591f079af0b07497700c8 data/minecraft/tags/blocks/logs_that_burn.json
+25c08095d789e84fb86b3c53469359262871116a data/minecraft/tags/blocks/mineable/axe.json
+903268f0ee87a361681afdc5b8ec857eef89f948 data/minecraft/tags/blocks/mineable/pickaxe.json
+9e2fe8eb81ba6d7484e52e0946391ed580885d24 data/minecraft/tags/blocks/planks.json
