@@ -1,8 +1,9 @@
-// 1.20.1	2024-03-08T10:47:35.9506859	Loot Tables
+// 1.20.1	2024-03-09T14:01:30.7461832	Loot Tables
 b2cc3b6bb54c3ab86baef68d2569d2412d143972 data/iloveclairo/loot_tables/blocks/jacaranda_hanging_sign.json
-ac0e14dffb135311cc891c8b5c1f871604d741b8 data/iloveclairo/loot_tables/blocks/jacaranda_leaves.json
+336122afcebb8003d00cd6837339e4b9fdc4b9f7 data/iloveclairo/loot_tables/blocks/jacaranda_leaves.json
 3855f8b6fb69a9babf81c77555eebf62bf43a2df data/iloveclairo/loot_tables/blocks/jacaranda_log.json
 2b3bc3167bd3d3e078b1182c0089869944c4ae6a data/iloveclairo/loot_tables/blocks/jacaranda_planks.json
+40d3dc114091b94f63afaf26eb9979a20d76817a data/iloveclairo/loot_tables/blocks/jacaranda_sapling.json
 4dd8629051acffe6cfd8b7f7cc43408494602594 data/iloveclairo/loot_tables/blocks/jacaranda_sign.json
 b18896be18a3ced002ec37cfa3812c0b3d6a8f54 data/iloveclairo/loot_tables/blocks/jacaranda_wall_hanging_sign.json
 9a540ce130cdef393c709cb490aaa7e87f65fa67 data/iloveclairo/loot_tables/blocks/jacaranda_wall_sign.json

@@ -2,11 +2,16 @@ package monster.esex.iloveclairo;
 
 import com.mojang.logging.LogUtils;
 import monster.esex.iloveclairo.block.types.ModWoodTypes;
+import monster.esex.iloveclairo.entity.client.ModBoatRenderer;
+import monster.esex.iloveclairo.item.CreativeTabInit;
 import monster.esex.iloveclairo.register.BlockEntityInit;
 import monster.esex.iloveclairo.register.BlockInit;
+import monster.esex.iloveclairo.register.EntityInit;
 import monster.esex.iloveclairo.register.ItemInit;
+import monster.esex.iloveclairo.worldgen.ModConfiguredFeatures;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.Sheets;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -35,7 +40,11 @@ public class Iloveclairo
 
         BlockInit.BLOCKS.register(modEventBus);
         ItemInit.ITEMS.register(modEventBus);
+        EntityInit.ENTITY_TYPES.register(modEventBus);
         BlockEntityInit.BLOCK_ENTITIES.register(modEventBus);
+
+        CreativeTabInit.CREATIVE_MODE_TABS.register(modEventBus);
+
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -64,6 +73,11 @@ public class Iloveclairo
         {
 
             Sheets.addWoodType(ModWoodTypes.JACARANDA);
+
+            EntityRenderers.register(EntityInit.JACARANDA_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
+            EntityRenderers.register(EntityInit.JACARANDA_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
+
+
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());

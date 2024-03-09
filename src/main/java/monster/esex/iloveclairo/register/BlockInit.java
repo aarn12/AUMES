@@ -3,12 +3,14 @@ package monster.esex.iloveclairo.register;
 import monster.esex.iloveclairo.block.*;
 import monster.esex.iloveclairo.Iloveclairo;
 import monster.esex.iloveclairo.block.types.ModWoodTypes;
+import monster.esex.iloveclairo.worldgen.tree.JacarandaTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.LeavesBlock;
+import net.minecraft.world.level.block.SaplingBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.registries.DeferredRegister;
@@ -76,5 +78,10 @@ public class BlockInit {
             () -> new ModHangingSign(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.JACARANDA));
     public static final RegistryObject<Block> JACARANDA_WALL_HANGING_SIGN = BLOCKS.register("jacaranda_wall_hanging_sign",
             () -> new ModWallHangingSign(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.JACARANDA));
+
+
+
+    public static final RegistryObject<Block> JACARANDA_SAPLING = BLOCKS.register("jacaranda_sapling",
+            () -> new SaplingBlock(new JacarandaTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
 }

@@ -25,7 +25,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         dropSelf(BlockInit.STRIPPED_JACARANDA_LOG.get());
         dropSelf(BlockInit.STRIPPED_JACARANDA_WOOD.get());
 
-        add(BlockInit.JACARANDA_LEAVES.get(), block -> createLeavesDrops(block, BlockInit.SUS_BLOCK.get(), NORMAL_LEAVES_SAPLING_CHANCES)); //TODO: Change to a sapling block
+        add(BlockInit.JACARANDA_LEAVES.get(), block -> createLeavesDrops(block, BlockInit.JACARANDA_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         add(BlockInit.JACARANDA_SIGN.get(), block ->
                 createSingleItemTable(ItemInit.JACARANDA_SIGN.get()));
@@ -35,6 +35,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createSingleItemTable(ItemInit.JACARANDA_HANGING_SIGN.get()));
         add(BlockInit.JACARANDA_WALL_HANGING_SIGN.get(), block ->
                 createSingleItemTable(ItemInit.JACARANDA_HANGING_SIGN.get()));
+
+        dropSelf(BlockInit.JACARANDA_SAPLING.get());
     }
 
 

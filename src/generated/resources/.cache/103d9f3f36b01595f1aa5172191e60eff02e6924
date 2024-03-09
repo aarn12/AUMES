@@ -1,3 +1,6 @@
-// 1.20.1	2024-03-08T09:16:24.4702862	Registries
+// 1.20.1	2024-03-09T14:27:10.3634597	Registries
 bd9516779ead6d4932a89c93c617f05ca0c017ab data/iloveclairo/dimension/addim.json
 e241e971aacde6f4d0236c622c99d6c9caeb981e data/iloveclairo/dimension_type/addim_type.json
+263479f6d9e9ce4dbafbdc2d730e05a43acb0fba data/iloveclairo/forge/biome_modifier/add_tree_jacaranda.json
+f79b91af37763fb827e3aa5351d24b854d4340a2 data/iloveclairo/worldgen/configured_feature/jacaranda.json
+1f8da66de41b03165cdaa70b7f4f52e2f6823f7f data/iloveclairo/worldgen/placed_feature/jacaranda_placed.json

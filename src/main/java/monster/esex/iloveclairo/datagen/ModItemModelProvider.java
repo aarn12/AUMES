@@ -25,6 +25,17 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ItemInit.JACARANDA_SIGN);
         simpleItem(ItemInit.JACARANDA_HANGING_SIGN);
+
+        simpleItem(ItemInit.JACARANDA_BOAT);
+        simpleItem(ItemInit.JACARANDA_CHEST_BOAT);
+
+        saplingItem(BlockInit.JACARANDA_SAPLING);
+    }
+
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(Iloveclairo.MOD_ID, "block/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

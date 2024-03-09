@@ -45,6 +45,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         hangingSignBlock(BlockInit.JACARANDA_HANGING_SIGN.get(), BlockInit.JACARANDA_WALL_HANGING_SIGN.get(),
                 blockTexture(BlockInit.JACARANDA_PLANKS.get()));
+
+        saplingBlock(BlockInit.JACARANDA_SAPLING);
+    }
+
+    private void saplingBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlock(blockRegistryObject.get(),
+                models().cross(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(),
+                        blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
     public void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {

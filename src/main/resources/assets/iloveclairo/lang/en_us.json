@@ -10,5 +10,14 @@
   "block.iloveclairo.jacaranda_leaves": "Jacaranda Leaves",
 
   "block.iloveclairo.jacaranda_sign": "Jacaranda Sign",
-  "block.iloveclairo.jacaranda_hanging_sign": "Jacaranda Sign"
+  "block.iloveclairo.jacaranda_hanging_sign": "Jacaranda Sign",
+
+  "item.iloveclairo.jacaranda_boat": "Jacaranda Boat",
+  "item.iloveclairo.jacaranda_chest_boat": "Jacaranda Chest Boat",
+
+  "item.iloveclairo.jacaranda_sapling": "Jacaranda Sapling",
+
+  "entity.iloveclairo.jacaranda_chest_boat": "Boat with Chest",
+
+  "creativetab.sus_tab": "Sus"
 }
